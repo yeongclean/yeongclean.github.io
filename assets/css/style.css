@@ -1,0 +1,74 @@
+/* ==========================================================================
+   SeYeong Jeong's Professional Research Theme (3-Color Palette)
+   Colors: #6E5C56 (Base), #967E76 (Highlight), #B7C4CF (Accent)
+   ========================================================================== */
+
+/* 1. 전체 배경 및 기본 텍스트 */
+body, main {
+    background-color: #EEE3CB !important; /* 전체 바탕은 눈이 편안한 베이지 유지 */
+    color: #6E5C56 !important;            /* 기본 글자색: 딥 브라운 */
+}
+
+/* 2. 인트로 섹션 (타이핑 화면) */
+#intro.section {
+    background-color: #6E5C56 !important; /* 딥 브라운 배경 */
+}
+
+.overlay {
+    background-color: rgba(0, 0, 0, 0.2); /* 배경색을 살리기 위해 투명도 낮춤 */
+}
+
+/* 3. 이름 하이라이트 (Class: .teal) */
+.teal {
+    background-color: #967E76 !important; /* 웜 타우프 배경 */
+    color: #EEE3CB !important;            /* 글자색은 밝은 베이지로 가독성 확보 */
+    padding: 2px 10px;
+    border-radius: 4px;
+}
+
+/* 4. 타이핑 글자 색상 (Class: .typing) */
+.typing {
+    color: #B7C4CF !important;            /* 블루 그레이 액센트 */
+    font-weight: bold !important;
+}
+
+/* 5. 사이드바 (Navigation) */
+ul.side-nav.fixed {
+    background-color: #6E5C56 !important; /* 사이드바 배경: 딥 브라운 */
+}
+
+ul.side-nav.fixed li.logo {
+    background-color: #967E76 !important; /* 로고 영역: 웜 타우프 */
+    border-bottom: 1px solid #B7C4CF;
+}
+
+ul.side-nav.fixed a, 
+ul.side-nav.fixed.table-of-contents li:not(.logo) a span,
+ul.side-nav.fixed.table-of-contents li:not(.logo) a i {
+    color: #B7C4CF !important;            /* 메뉴 글자 및 아이콘: 블루 그레이 */
+}
+
+/* 메뉴 호버 시 효과 */
+ul.table-of-contents li:not(.logo) a:hover {
+    background-color: #967E76 !important; 
+    border-left: 4px solid #B7C4CF !important;
+}
+
+/* 6. 연락처 및 버튼 아이콘 (#contact) */
+#contact .btn-floating {
+    background-color: #967E76 !important; /* 버튼 배경: 웜 타우프 */
+}
+
+#contact .btn-floating i {
+    color: #B7C4CF !important;            /* 아이콘 색상: 블루 그레이 */
+}
+
+#contact a.hoverline {
+    color: #6E5C56 !important;
+    border-bottom: 2px solid #B7C4CF !important;
+}
+
+/* 7. 프로필 사진 테두리 */
+.profile-pic {
+    border: 6px solid #B7C4CF !important; /* 테두리: 블루 그레이 */
+}
