@@ -873,3 +873,18 @@ a:not([href]) { cursor: default; }
 .pub-title { font-size: 1.1em; color: var(--slate-800); font-weight: 500; }
 .pub-venue { color: var(--slate-500); }
 .pub-empty { color: var(--slate-500); padding-left: 0.75rem; }
+
+/* Research Interests */
+.research-card { min-height: 170px; }
+.research-card .card-title { font-size: 1.35rem !important; color: var(--slate-800) !important; display: block; margin-bottom: 8px; }
+.research-card p { color: var(--slate-500); line-height: 1.6; }
+/* Font Awesome icon inside sidebar, sized like Materialize small icons */
+ul.side-nav i.nav-fa {
+  font-size: 1.9rem;
+  width: 2rem;
+  text-align: center;
+  vertical-align: middle;
+  margin-right: -3px;
+  position: relative;
+  top: -3px;
+}
