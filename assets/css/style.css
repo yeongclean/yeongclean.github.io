@@ -880,13 +880,13 @@ a:not([href]) { cursor: default; }
 .research-card p { color: var(--slate-500); line-height: 1.6; }
 /* Font Awesome icon inside sidebar, sized like Materialize small icons */
 ul.side-nav i.nav-fa {
-  font-size: 1.9rem;
-  width: 2rem;
-  text-align: center;
-  vertical-align: middle;
-  margin-right: -3px;
+  /* behave like the inline Materialize icons: glyph + 15px side padding = 1em + 30px */
+  display: inline;
+  padding: 0 calc(15px + 0.214em);
+  line-height: inherit;
+  margin: 0;
   position: relative;
-  top: -3px;
+  top: 3px;
 }
 
 /* Stronger section titles */
