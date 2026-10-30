@@ -808,3 +808,31 @@ a.hoverline:hover { border-bottom: 2px solid var(--slate-800) !important; }
   border-radius: 0 !important;
   padding: 0 12px;
 }
+
+/* Softer hover effects */
+.icon-btn, .readme, .contactme,
+ul.table-of-contents li:not(.logo) a,
+ul.table-of-contents li:not(.logo) a span,
+ul.table-of-contents li:not(.logo) a i,
+.btn-floating {
+  transition: background-color 0.3s ease, color 0.3s ease, border-color 0.3s ease, transform 0.3s ease, opacity 0.3s ease;
+}
+.icon-btn:hover { transform: translateY(-2px); }
+.github:hover, .linkedin:hover, .orcid:hover { background: var(--slate-50); color: var(--slate-800); }
+#intro a.readme:hover { background: var(--slate-200) !important; }
+#intro a.contactme:hover {
+  background: rgba(255, 255, 255, 0.08) !important;
+  color: var(--slate-50) !important;
+  border-color: var(--slate-200);
+}
+ul.table-of-contents li:not(.logo) a:hover {
+  background-color: rgba(255, 255, 255, 0.04) !important;
+  border-left: 3px solid var(--slate-500) !important;
+}
+ul.table-of-contents li:not(.logo) a.active {
+  background-color: rgba(255, 255, 255, 0.07) !important;
+  border-left: 3px solid var(--slate-200) !important;
+}
+.btn-floating:hover { opacity: 0.85; }
+/* turn off Materialize click ripple flash */
+.waves-effect .waves-ripple { display: none !important; }
