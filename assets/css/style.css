@@ -888,3 +888,11 @@ ul.side-nav i.nav-fa {
   position: relative;
   top: -3px;
 }
+
+/* Stronger section titles */
+h3.page-title {
+  font-weight: 600 !important;
+  font-size: 2.4rem;
+  letter-spacing: 0.04em !important;
+}
+.card .card-title, .research-card .card-title { font-weight: 500 !important; }
