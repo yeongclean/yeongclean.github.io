@@ -836,3 +836,40 @@ ul.table-of-contents li:not(.logo) a.active {
 .btn-floating:hover { opacity: 0.85; }
 /* turn off Materialize click ripple flash */
 .waves-effect .waves-ripple { display: none !important; }
+
+/* ==========================================================================
+   Sidebar: profile spacing
+   ========================================================================== */
+ul.side-nav.fixed li.logo {
+  min-height: 0 !important;
+  padding: 28px 0 24px !important;
+  margin-bottom: 14px;
+  text-align: center;
+}
+ul.side-nav.fixed li.logo a { padding: 0 !important; height: auto; line-height: normal; }
+.profile-pic {
+  display: block;
+  margin: 0 auto !important;
+  width: 124px;
+  height: 124px;
+  max-width: none;
+  max-height: none;
+  object-fit: cover;
+}
+ul#slide-out { padding-top: 16px; }
+
+
+
+/* fixes: logo link is position:absolute in Materialize; side-nav is 100% + 60px tall */
+ul.side-nav.fixed li.logo a.brand-logo { position: static !important; display: block; transform: none; }
+ul#slide-out li:hover { background-color: rgba(255, 255, 255, 0.05) !important; }
+/* Resume placeholder (no link yet) */
+a:not([href]) { cursor: default; }
+
+/* Publications */
+.pub-list { padding-left: 1.4em; margin: 0 0 1em; }
+.pub-list li { list-style: decimal; margin-bottom: 1.4em; line-height: 1.6; }
+.pub-list li span { display: block; }
+.pub-title { font-size: 1.1em; color: var(--slate-800); font-weight: 500; }
+.pub-venue { color: var(--slate-500); }
+.pub-empty { color: var(--slate-500); padding-left: 0.75rem; }
