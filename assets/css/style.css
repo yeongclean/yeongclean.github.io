@@ -896,3 +896,5 @@ h3.page-title {
   letter-spacing: 0.04em !important;
 }
 .card .card-title, .research-card .card-title { font-weight: 500 !important; }
+#contact .email-sep { color: var(--slate-400); margin: 0 4px; position: relative; left: 20px; bottom: 6px; }
+@media only screen and (max-width: 600px) { #contact .email-sep { display: none; } }
