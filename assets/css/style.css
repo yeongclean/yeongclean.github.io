@@ -696,3 +696,107 @@ small {
 .typing {
   font-weight: bold !important;
 }
+
+/* ==========================================================================
+   Theme: Slate mono
+   ========================================================================== */
+:root {
+  --slate-950: #0F172A;  /* sidebar, darkest */
+  --slate-800: #1E293B;  /* hero, headings, links */
+  --slate-700: #334155;
+  --slate-500: #64748B;  /* muted text */
+  --slate-400: #94A3B8;
+  --slate-300: #CBD5E1;  /* lines */
+  --slate-200: #E2E8F0;  /* highlight / chips */
+  --slate-50:  #F8FAFC;  /* page background */
+}
+
+body, main {
+  background: var(--slate-50) !important;
+  color: var(--slate-700) !important;
+}
+
+/* intro */
+#intro.section { background: var(--slate-800) !important; }
+.overlay { background-color: transparent !important; }
+#intro.section .teal,
+.teal:not(.page-title) {
+  background-color: var(--slate-200) !important;
+  color: var(--slate-950) !important;
+  padding: 0 10px;
+  border-radius: 4px;
+}
+.typing, #intro .typing { color: var(--slate-400) !important; }
+.typed-cursor { color: var(--slate-400); }
+
+.readme { background: var(--slate-50); color: var(--slate-800); border-color: var(--slate-50); }
+.readme:hover { background: var(--slate-200); color: var(--slate-950); }
+.contactme { color: var(--slate-50); border-color: var(--slate-400); }
+.contactme:hover { background: var(--slate-50); color: var(--slate-800); }
+.icon-btn { background: var(--slate-200); }
+.github, .linkedin { color: var(--slate-800); }
+.github:hover, .linkedin:hover { background: var(--slate-50); color: var(--slate-950); }
+
+/* sidebar */
+ul.side-nav.fixed, ul#slide-out { background-color: var(--slate-950) !important; }
+ul.side-nav.fixed li.logo,
+ul.table-of-contents li.logo a:hover {
+  background-color: var(--slate-950) !important;
+  border-bottom: 1px solid var(--slate-700) !important;
+}
+ul.side-nav.fixed.table-of-contents li:not(.logo) a span,
+ul.side-nav.fixed.table-of-contents li:not(.logo) a i,
+ul#slide-out li:not(.logo) a span,
+ul#slide-out li:not(.logo) a i { color: var(--slate-400) !important; }
+ul.table-of-contents li:not(.logo) a.active,
+ul.table-of-contents li:not(.logo) a:hover {
+  background-color: var(--slate-800) !important;
+  border-left: 3px solid var(--slate-200) !important;
+}
+ul.table-of-contents li:not(.logo) a.active span,
+ul.table-of-contents li:not(.logo) a.active i,
+ul.table-of-contents li:not(.logo) a:hover span,
+ul.table-of-contents li:not(.logo) a:hover i { color: var(--slate-50) !important; }
+.profile-pic { border: 4px solid var(--slate-200) !important; }
+
+/* mobile top bar */
+nav.trigger { background: var(--slate-950) !important; }
+nav.trigger a, nav.trigger i, nav.trigger .black-text { color: var(--slate-200) !important; }
+
+/* section headers */
+h3.page-title.teal {
+  background-color: transparent !important;
+  color: var(--slate-800) !important;
+  border-bottom: 1px solid var(--slate-300);
+  margin-left: 40px; margin-right: 40px;
+  padding-left: 0; padding-right: 0;
+  letter-spacing: 0.08em;
+}
+
+/* text & links */
+a, .teal-text { color: var(--slate-800) !important; }
+.brown-text { color: var(--slate-500) !important; }
+a.hoverline { border-bottom: 2px solid var(--slate-300) !important; }
+a.hoverline:hover { border-bottom: 2px solid var(--slate-800) !important; }
+
+/* cards */
+.card {
+  background: #FFFFFF;
+  box-shadow: none !important;
+  border: 1px solid var(--slate-200);
+  border-radius: 8px;
+}
+
+/* contact */
+#contact .btn-floating,
+.btn-floating.blue-grey { background-color: var(--slate-800) !important; }
+#contact .btn-floating i { color: var(--slate-50) !important; }
+
+/* ORCID button (no FA 4 icon) */
+.orcid { color: var(--slate-800); }
+.orcid:hover { background: var(--slate-50); color: var(--slate-950); }
+.orcid-id { font-family: Arial, sans-serif; font-weight: bold; font-size: 1.05em; letter-spacing: -0.02em; }
+#contact .btn-floating .orcid-id { color: var(--slate-50); line-height: 56px; }
+#intro a.contactme { color: var(--slate-50) !important; }
+#intro a.contactme:hover, #intro a.readme { color: var(--slate-800) !important; }
+.orcid-id { text-transform: none; }
